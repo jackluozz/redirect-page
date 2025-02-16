@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        window.location.href = "wa.link/6zwqj5";
+        setTimeout(function() {
+            window.location.href = "https://wa.link/6zwqj5";
+        }, 5000);
     </script>
     <style>
         body {
-            background-color: white;
-            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-top: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
-
 <body>
+    Redirecting you to WhatsApp...
+    <div class="loader"></div>
 </body>
-
 </html>
